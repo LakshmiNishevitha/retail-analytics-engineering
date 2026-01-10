@@ -42,11 +42,11 @@ jobs:
                 threads: 1
           YAML
 
-      - name: dbt deps
-        run: |
-          dbt deps --project-dir dbt/retail_dbt --profiles-dir ~/.dbt
+       - name: dbt deps
+         run: |
+           dbt deps --project-dir dbt/retail_dbt --profiles-dir ~/.dbt
 
-      - name: dbt compile (SAFE)
+      - name: dbt parse (SAFE: no warehouse connection)
         run: |
-          dbt compile --project-dir dbt/retail_dbt --profiles-dir ~/.dbt
+          dbt parse --project-dir dbt/retail_dbt --profiles-dir ~/.dbt
 
