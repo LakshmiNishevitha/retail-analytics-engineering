@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install "dbt-snowflake==1.8.2"
 
-      - name: Create dbt profiles.yml (NO SECRETS, compile-only)
+      - name: Create CI-only dbt profile (NO Snowflake access)
         run: |
           mkdir -p ~/.dbt
           cat > ~/.dbt/profiles.yml << 'YAML'
@@ -32,14 +32,14 @@ jobs:
             outputs:
               ci:
                 type: snowflake
-                account: "DUMMY_ACCOUNT"
-                user: "DUMMY_USER"
-                password: "DUMMY_PASSWORD"
-                role: "DUMMY_ROLE"
-                database: "RETAIL_DW"
-                warehouse: "RETAIL_WH"
-                schema: "CI_COMPILE_ONLY"
-                threads: 2
+                account: "FAKE_ACCOUNT"
+                user: "FAKE_USER"
+                password: "FAKE_PASSWORD"
+                role: "FAKE_ROLE"
+                database: "CI_DUMMY_DB"
+                warehouse: "CI_DUMMY_WH"
+                schema: "CI_DUMMY_SCHEMA"
+                threads: 1
           YAML
 
       - name: dbt deps
