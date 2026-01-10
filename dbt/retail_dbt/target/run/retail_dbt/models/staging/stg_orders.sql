@@ -1,0 +1,14 @@
+
+  create or replace   view RETAIL_DW.STAGING_STAGING.stg_orders
+  
+   as (
+    select
+  order_id,
+  customer_id,
+  store_id,
+  order_ts::timestamp_ntz as order_ts,
+  status,
+  ingested_at
+from RETAIL_DW.RAW.ORDERS_RAW
+  );
+

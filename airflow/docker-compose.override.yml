@@ -1,0 +1,11 @@
+services:
+  airflow-webserver:
+    volumes:
+      - /Users/lakshminishevitha/retail-dw/dbt/retail_dbt:/opt/airflow/dbt/retail_dbt
+      - /Users/lakshminishevitha/.dbt:/home/airflow/.dbt
+
+  airflow-scheduler:
+    volumes:
+      - /Users/lakshminishevitha/retail-dw/dbt/retail_dbt:/opt/airflow/dbt/retail_dbt
+      - /Users/lakshminishevitha/.dbt:/home/airflow/.dbt
+

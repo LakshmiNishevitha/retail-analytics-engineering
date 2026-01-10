@@ -1,0 +1,57 @@
+[2026-01-10T05:27:17.908+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-10T05:27:17.918+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_run scheduled__2026-01-09T00:00:00+00:00 [queued]>
+[2026-01-10T05:27:17.923+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_run scheduled__2026-01-09T00:00:00+00:00 [queued]>
+[2026-01-10T05:27:17.923+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2026-01-10T05:27:17.930+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): dbt_run> on 2026-01-09 00:00:00+00:00
+[2026-01-10T05:27:17.934+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5117) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-10T05:27:17.935+0000] {standard_task_runner.py:72} INFO - Started process 5122 to run task
+[2026-01-10T05:27:17.935+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'retail_dbt_daily_pipeline', 'dbt_run', 'scheduled__2026-01-09T00:00:00+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/retail_dbt_daily_pipeline.py', '--cfg-path', '/tmp/tmphyo0hxl9']
+[2026-01-10T05:27:17.936+0000] {standard_task_runner.py:105} INFO - Job 120: Subtask dbt_run
+[2026-01-10T05:27:17.964+0000] {task_command.py:467} INFO - Running <TaskInstance: retail_dbt_daily_pipeline.dbt_run scheduled__2026-01-09T00:00:00+00:00 [running]> on host a1f5ea7d51b7
+[2026-01-10T05:27:18.012+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='retail_dbt_daily_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-09T00:00:00+00:00'
+[2026-01-10T05:27:18.012+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-10T05:27:18.022+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-10T05:27:18.023+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt/retail_dbt && /home/***/.local/bin/dbt run --target test_wh']
+[2026-01-10T05:27:18.027+0000] {subprocess.py:99} INFO - Output:
+[2026-01-10T05:27:20.938+0000] {subprocess.py:106} INFO - [0m05:27:20  Running with dbt=1.8.2
+[2026-01-10T05:27:21.696+0000] {subprocess.py:106} INFO - [0m05:27:21  Registered adapter: snowflake=1.8.2
+[2026-01-10T05:27:22.057+0000] {subprocess.py:106} INFO - [0m05:27:22  Found 12 models, 1 snapshot, 16 data tests, 6 sources, 575 macros
+[2026-01-10T05:27:22.060+0000] {subprocess.py:106} INFO - [0m05:27:22
+[2026-01-10T05:27:26.161+0000] {subprocess.py:106} INFO - [0m05:27:26  Concurrency: 2 threads (target='test_wh')
+[2026-01-10T05:27:26.163+0000] {subprocess.py:106} INFO - [0m05:27:26
+[2026-01-10T05:27:26.180+0000] {subprocess.py:106} INFO - [0m05:27:26  1 of 12 START sql table model STAGING_ANALYTICS.dim_date ....................... [RUN]
+[2026-01-10T05:27:26.181+0000] {subprocess.py:106} INFO - [0m05:27:26  2 of 12 START sql view model STAGING_STAGING.stg_customers ..................... [RUN]
+[2026-01-10T05:27:27.255+0000] {subprocess.py:106} INFO - [0m05:27:27  2 of 12 OK created sql view model STAGING_STAGING.stg_customers ................ [[32mSUCCESS 1[0m in 1.07s]
+[2026-01-10T05:27:27.257+0000] {subprocess.py:106} INFO - [0m05:27:27  3 of 12 START sql view model STAGING_STAGING.stg_inventory_snapshots ........... [RUN]
+[2026-01-10T05:27:28.327+0000] {subprocess.py:106} INFO - [0m05:27:28  3 of 12 OK created sql view model STAGING_STAGING.stg_inventory_snapshots ...... [[32mSUCCESS 1[0m in 1.07s]
+[2026-01-10T05:27:28.329+0000] {subprocess.py:106} INFO - [0m05:27:28  4 of 12 START sql view model STAGING_STAGING.stg_order_items ................... [RUN]
+[2026-01-10T05:27:28.421+0000] {subprocess.py:106} INFO - [0m05:27:28  1 of 12 OK created sql table model STAGING_ANALYTICS.dim_date .................. [[32mSUCCESS 1[0m in 2.24s]
+[2026-01-10T05:27:28.423+0000] {subprocess.py:106} INFO - [0m05:27:28  5 of 12 START sql view model STAGING_STAGING.stg_orders ........................ [RUN]
+[2026-01-10T05:27:29.984+0000] {subprocess.py:106} INFO - [0m05:27:29  4 of 12 OK created sql view model STAGING_STAGING.stg_order_items .............. [[32mSUCCESS 1[0m in 1.65s]
+[2026-01-10T05:27:29.988+0000] {subprocess.py:106} INFO - [0m05:27:29  6 of 12 START sql view model STAGING_STAGING.stg_products ...................... [RUN]
+[2026-01-10T05:27:30.501+0000] {subprocess.py:106} INFO - [0m05:27:30  5 of 12 OK created sql view model STAGING_STAGING.stg_orders ................... [[32mSUCCESS 1[0m in 2.07s]
+[2026-01-10T05:27:30.505+0000] {subprocess.py:106} INFO - [0m05:27:30  7 of 12 START sql view model STAGING_STAGING.stg_stores ........................ [RUN]
+[2026-01-10T05:27:31.545+0000] {subprocess.py:106} INFO - [0m05:27:31  6 of 12 OK created sql view model STAGING_STAGING.stg_products ................. [[32mSUCCESS 1[0m in 1.55s]
+[2026-01-10T05:27:31.548+0000] {subprocess.py:106} INFO - [0m05:27:31  8 of 12 START sql table model STAGING_ANALYTICS.dim_customer ................... [RUN]
+[2026-01-10T05:27:31.568+0000] {subprocess.py:106} INFO - [0m05:27:31  7 of 12 OK created sql view model STAGING_STAGING.stg_stores ................... [[32mSUCCESS 1[0m in 1.05s]
+[2026-01-10T05:27:31.573+0000] {subprocess.py:106} INFO - [0m05:27:31  9 of 12 START sql table model STAGING_ANALYTICS.fact_inventory_snapshot ........ [RUN]
+[2026-01-10T05:27:33.681+0000] {subprocess.py:106} INFO - [0m05:27:33  9 of 12 OK created sql table model STAGING_ANALYTICS.fact_inventory_snapshot ... [[32mSUCCESS 1[0m in 2.10s]
+[2026-01-10T05:27:33.683+0000] {subprocess.py:106} INFO - [0m05:27:33  8 of 12 OK created sql table model STAGING_ANALYTICS.dim_customer .............. [[32mSUCCESS 1[0m in 2.13s]
+[2026-01-10T05:27:33.690+0000] {subprocess.py:106} INFO - [0m05:27:33  10 of 12 START sql table model STAGING_ANALYTICS.dim_product ................... [RUN]
+[2026-01-10T05:27:33.691+0000] {subprocess.py:106} INFO - [0m05:27:33  11 of 12 START sql table model STAGING_ANALYTICS.dim_store ..................... [RUN]
+[2026-01-10T05:27:35.797+0000] {subprocess.py:106} INFO - [0m05:27:35  10 of 12 OK created sql table model STAGING_ANALYTICS.dim_product .............. [[32mSUCCESS 1[0m in 2.10s]
+[2026-01-10T05:27:35.799+0000] {subprocess.py:106} INFO - [0m05:27:35  12 of 12 START sql table model STAGING_ANALYTICS.fact_sales .................... [RUN]
+[2026-01-10T05:27:35.903+0000] {subprocess.py:106} INFO - [0m05:27:35  11 of 12 OK created sql table model STAGING_ANALYTICS.dim_store ................ [[32mSUCCESS 1[0m in 2.21s]
+[2026-01-10T05:27:38.444+0000] {subprocess.py:106} INFO - [0m05:27:38  12 of 12 OK created sql table model STAGING_ANALYTICS.fact_sales ............... [[32mSUCCESS 1[0m in 2.64s]
+[2026-01-10T05:27:38.449+0000] {subprocess.py:106} INFO - [0m05:27:38
+[2026-01-10T05:27:38.450+0000] {subprocess.py:106} INFO - [0m05:27:38  Finished running 6 view models, 6 table models in 0 hours 0 minutes and 16.39 seconds (16.39s).
+[2026-01-10T05:27:38.498+0000] {subprocess.py:106} INFO - [0m05:27:38
+[2026-01-10T05:27:38.499+0000] {subprocess.py:106} INFO - [0m05:27:38  [32mCompleted successfully[0m
+[2026-01-10T05:27:38.499+0000] {subprocess.py:106} INFO - [0m05:27:38
+[2026-01-10T05:27:38.499+0000] {subprocess.py:106} INFO - [0m05:27:38  Done. PASS=12 WARN=0 ERROR=0 SKIP=0 TOTAL=12
+[2026-01-10T05:27:39.228+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-01-10T05:27:39.247+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-10T05:27:39.248+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=retail_dbt_daily_pipeline, task_id=dbt_run, run_id=scheduled__2026-01-09T00:00:00+00:00, execution_date=20260109T000000, start_date=20260110T052717, end_date=20260110T052739
+[2026-01-10T05:27:39.275+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-01-10T05:27:39.290+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-10T05:27:39.291+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

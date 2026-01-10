@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RETAIL_DW
+    schema: RAW
+    tables:
+      - name: ORDERS_RAW
+      - name: ORDER_ITEMS_RAW
+      - name: CUSTOMERS_RAW
+      - name: PRODUCTS_RAW
+      - name: STORES_RAW
+      - name: INVENTORY_SNAPSHOTS_RAW

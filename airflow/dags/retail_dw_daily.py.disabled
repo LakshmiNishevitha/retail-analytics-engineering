@@ -1,0 +1,50 @@
+from datetime import datetime, timedelta
+from airflow import DAG
+from airflow.operators.bash import BashOperator
+
+DBT_DIR = "/opt/airflow/dbt/retail_dbt"
+DBT_BIN = "/home/airflow/.local/bin/dbt"
+
+dbt_deps_cmd = f"cd {DBT_DIR} && {DBT_BIN} deps"
+dbt_snapshot_cmd = f"cd {DBT_DIR} && {DBT_BIN} snapshot"
+dbt_run_cmd = f"cd {DBT_DIR} && {DBT_BIN} run"
+dbt_test_cmd = f"cd {DBT_DIR} && {DBT_BIN} test"
+
+default_args = {
+    "owner": "data-engineering",
+    "depends_on_past": False,
+    "retries": 1,
+    "retry_delay": timedelta(minutes=5),
+}
+
+with DAG(
+    dag_id="retail_dbt_daily_pipeline",
+    default_args=default_args,
+    description="Daily dbt pipeline for Retail Data Warehouse",
+    schedule_interval="0 6 * * *",  # daily at 6 AM
+    start_date=datetime(2025, 1, 1),
+    catchup=False,
+    tags=["retail", "dbt", "warehouse"],
+) as dag:
+
+    dbt_deps = BashOperator(
+        task_id="dbt_deps",
+        bash_command="cd /opt/airflow/dbt/retail_dbt && dbt deps",
+    )
+
+    dbt_snapshot = BashOperator(
+        task_id="dbt_snapshot",
+        bash_command=f"cd {DBT_DIR} && dbt snapshot",
+    )
+
+    dbt_run = BashOperator(
+        task_id="dbt_run",
+        bash_command=f"cd {DBT_DIR} && dbt run",
+    )
+
+    dbt_test = BashOperator(
+        task_id="dbt_test",
+        bash_command=f"cd {DBT_DIR} && dbt test",
+    )
+
+    dbt_deps >> dbt_snapshot >> dbt_run >> dbt_test

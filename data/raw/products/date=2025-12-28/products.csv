@@ -1,0 +1,301 @@
+product_id,sku,product_name,brand,category,cost,active_flag,updated_at
+P00001,SKU-00001,Reduced optimal concept,NovaCo,Electronics,50.37,Y,2025-12-28 20:06:18
+P00002,SKU-00002,Polarized zero-defect circuit,Vertex,Beauty,57.81,Y,2025-12-28 20:06:18
+P00003,SKU-00003,Profound 4thgeneration monitoring,NovaCo,Sports,122.44,Y,2025-12-28 20:06:18
+P00004,SKU-00004,Sharable homogeneous array,BluePeak,Sports,161.81,Y,2025-12-28 20:06:18
+P00005,SKU-00005,Stand-alone impactful budgetary management,Orion,Apparel,107.28,Y,2025-12-28 20:06:18
+P00006,SKU-00006,Polarized homogeneous parallelism,BluePeak,Electronics,193.25,Y,2025-12-28 20:06:18
+P00007,SKU-00007,Sharable solution-oriented Graphical User Interface,BluePeak,Grocery,155.22,Y,2025-12-28 20:06:18
+P00008,SKU-00008,Phased needs-based projection,BluePeak,Beauty,75.28,Y,2025-12-28 20:06:18
+P00009,SKU-00009,Innovative disintermediate strategy,Acme,Beauty,18.84,Y,2025-12-28 20:06:18
+P00010,SKU-00010,Digitized homogeneous methodology,NovaCo,Apparel,156.48,Y,2025-12-28 20:06:18
+P00011,SKU-00011,Cross-platform 4thgeneration adapter,NovaCo,Sports,83.66,Y,2025-12-28 20:06:18
+P00012,SKU-00012,Up-sized tangible infrastructure,BluePeak,Apparel,65.74,Y,2025-12-28 20:06:18
+P00013,SKU-00013,Organic 24hour success,Nimbus,Sports,96.19,Y,2025-12-28 20:06:18
+P00014,SKU-00014,Synchronized grid-enabled matrix,Acme,Beauty,156.15,Y,2025-12-28 20:06:18
+P00015,SKU-00015,Re-contextualized motivating moderator,Nimbus,Beauty,27.69,Y,2025-12-28 20:06:18
+P00016,SKU-00016,Implemented needs-based matrix,Orion,Sports,26.89,Y,2025-12-28 20:06:18
+P00017,SKU-00017,Switchable mission-critical system engine,Nimbus,Sports,168.82,Y,2025-12-28 20:06:18
+P00018,SKU-00018,Quality-focused motivating support,Nimbus,Apparel,49.9,Y,2025-12-28 20:06:18
+P00019,SKU-00019,Object-based logistical instruction set,Evergreen,Grocery,51.14,Y,2025-12-28 20:06:18
+P00020,SKU-00020,Stand-alone empowering standardization,Orion,Electronics,17.88,Y,2025-12-28 20:06:18
+P00021,SKU-00021,Phased 5thgeneration process improvement,Vertex,Home,25.64,Y,2025-12-28 20:06:18
+P00022,SKU-00022,Advanced background product,Orion,Electronics,159.88,Y,2025-12-28 20:06:18
+P00023,SKU-00023,Secured hybrid focus group,Acme,Sports,171.08,Y,2025-12-28 20:06:18
+P00024,SKU-00024,Seamless composite data-warehouse,Nimbus,Grocery,174.76,Y,2025-12-28 20:06:18
+P00025,SKU-00025,Distributed secondary alliance,Evergreen,Sports,149.25,Y,2025-12-28 20:06:18
+P00026,SKU-00026,Centralized 24hour complexity,Vertex,Beauty,170.57,Y,2025-12-28 20:06:18
+P00027,SKU-00027,Right-sized reciprocal application,BluePeak,Sports,193.63,Y,2025-12-28 20:06:18
+P00028,SKU-00028,Streamlined client-server definition,Vertex,Electronics,35.97,Y,2025-12-28 20:06:18
+P00029,SKU-00029,Adaptive maximized structure,NovaCo,Home,48.82,Y,2025-12-28 20:06:18
+P00030,SKU-00030,Re-engineered asymmetric protocol,NovaCo,Grocery,72.76,Y,2025-12-28 20:06:18
+P00031,SKU-00031,Compatible well-modulated instruction set,NovaCo,Beauty,12.34,Y,2025-12-28 20:06:18
+P00032,SKU-00032,Team-oriented actuating website,NovaCo,Beauty,96.92,Y,2025-12-28 20:06:18
+P00033,SKU-00033,Digitized static infrastructure,Evergreen,Grocery,171.58,Y,2025-12-28 20:06:18
+P00034,SKU-00034,Diverse scalable frame,Nimbus,Electronics,135.24,Y,2025-12-28 20:06:18
+P00035,SKU-00035,Multi-channeled non-volatile frame,Orion,Beauty,86.89,Y,2025-12-28 20:06:18
+P00036,SKU-00036,Programmable logistical pricing structure,Nimbus,Sports,14.36,Y,2025-12-28 20:06:18
+P00037,SKU-00037,Triple-buffered 24/7 software,Evergreen,Sports,24.81,Y,2025-12-28 20:06:18
+P00038,SKU-00038,Programmable needs-based frame,Vertex,Sports,163.66,Y,2025-12-28 20:06:18
+P00039,SKU-00039,Open-source neutral workforce,Orion,Grocery,176.47,Y,2025-12-28 20:06:18
+P00040,SKU-00040,Automated fresh-thinking support,Acme,Grocery,149.6,Y,2025-12-28 20:06:18
+P00041,SKU-00041,Up-sized systematic success,Orion,Apparel,10.66,Y,2025-12-28 20:06:18
+P00042,SKU-00042,Implemented system-worthy application,Vertex,Beauty,50.54,Y,2025-12-28 20:06:18
+P00043,SKU-00043,Up-sized didactic throughput,Vertex,Home,152.7,Y,2025-12-28 20:06:18
+P00044,SKU-00044,Compatible global service-desk,Acme,Home,36.17,Y,2025-12-28 20:06:18
+P00045,SKU-00045,Monitored fault-tolerant solution,NovaCo,Beauty,108.07,Y,2025-12-28 20:06:18
+P00046,SKU-00046,Automated modular middleware,Nimbus,Home,113.81,Y,2025-12-28 20:06:18
+P00047,SKU-00047,Visionary interactive firmware,Vertex,Sports,194.08,Y,2025-12-28 20:06:18
+P00048,SKU-00048,Customer-focused systematic migration,BluePeak,Apparel,21.04,Y,2025-12-28 20:06:18
+P00049,SKU-00049,Re-contextualized 6thgeneration encoding,Evergreen,Home,196.2,Y,2025-12-28 20:06:18
+P00050,SKU-00050,Total exuding hub,Nimbus,Grocery,105.93,Y,2025-12-28 20:06:18
+P00051,SKU-00051,Face-to-face static secured line,NovaCo,Sports,76.0,Y,2025-12-28 20:06:18
+P00052,SKU-00052,Diverse discrete productivity,NovaCo,Grocery,61.52,Y,2025-12-28 20:06:18
+P00053,SKU-00053,Intuitive background infrastructure,Vertex,Grocery,79.01,Y,2025-12-28 20:06:18
+P00054,SKU-00054,User-centric fault-tolerant attitude,Nimbus,Apparel,146.99,Y,2025-12-28 20:06:18
+P00055,SKU-00055,Exclusive exuding software,NovaCo,Sports,144.67,Y,2025-12-28 20:06:18
+P00056,SKU-00056,Self-enabling bi-directional budgetary management,Evergreen,Home,137.88,Y,2025-12-28 20:06:18
+P00057,SKU-00057,Optimized regional budgetary management,BluePeak,Sports,84.36,Y,2025-12-28 20:06:18
+P00058,SKU-00058,Secured coherent support,Evergreen,Beauty,35.4,Y,2025-12-28 20:06:18
+P00059,SKU-00059,Total composite capability,NovaCo,Sports,22.47,Y,2025-12-28 20:06:18
+P00060,SKU-00060,Cloned holistic success,Nimbus,Beauty,44.67,Y,2025-12-28 20:06:18
+P00061,SKU-00061,Re-contextualized asymmetric solution,NovaCo,Electronics,8.11,Y,2025-12-28 20:06:18
+P00062,SKU-00062,Synchronized 6thgeneration capability,Acme,Beauty,77.81,Y,2025-12-28 20:06:18
+P00063,SKU-00063,User-friendly holistic adapter,Acme,Beauty,94.49,Y,2025-12-28 20:06:18
+P00064,SKU-00064,Pre-emptive executive utilization,Acme,Apparel,155.91,Y,2025-12-28 20:06:18
+P00065,SKU-00065,Advanced bottom-line parallelism,Vertex,Electronics,85.83,Y,2025-12-28 20:06:18
+P00066,SKU-00066,Reverse-engineered needs-based standardization,BluePeak,Beauty,157.66,Y,2025-12-28 20:06:18
+P00067,SKU-00067,Managed 4thgeneration analyzer,Acme,Beauty,168.61,Y,2025-12-28 20:06:18
+P00068,SKU-00068,Re-contextualized user-facing adapter,Vertex,Electronics,36.43,Y,2025-12-28 20:06:18
+P00069,SKU-00069,Ameliorated empowering adapter,BluePeak,Home,53.53,Y,2025-12-28 20:06:18
+P00070,SKU-00070,Ergonomic needs-based info-mediaries,Orion,Electronics,138.4,Y,2025-12-28 20:06:18
+P00071,SKU-00071,Customer-focused regional projection,Evergreen,Grocery,187.39,Y,2025-12-28 20:06:18
+P00072,SKU-00072,Fundamental global architecture,Nimbus,Sports,191.42,Y,2025-12-28 20:06:18
+P00073,SKU-00073,Fundamental object-oriented database,Evergreen,Beauty,2.68,Y,2025-12-28 20:06:18
+P00074,SKU-00074,Progressive actuating alliance,NovaCo,Sports,57.41,Y,2025-12-28 20:06:18
+P00075,SKU-00075,Multi-tiered dedicated knowledgebase,Nimbus,Sports,100.4,Y,2025-12-28 20:06:18
+P00076,SKU-00076,Operative attitude-oriented budgetary management,BluePeak,Sports,162.72,Y,2025-12-28 20:06:18
+P00077,SKU-00077,Profit-focused eco-centric data-warehouse,NovaCo,Grocery,177.94,Y,2025-12-28 20:06:18
+P00078,SKU-00078,Fundamental stable framework,Orion,Apparel,59.03,Y,2025-12-28 20:06:18
+P00079,SKU-00079,Synergistic high-level portal,Nimbus,Sports,123.24,Y,2025-12-28 20:06:18
+P00080,SKU-00080,Down-sized 3rdgeneration benchmark,Orion,Beauty,18.19,Y,2025-12-28 20:06:18
+P00081,SKU-00081,Customer-focused clear-thinking extranet,Orion,Beauty,130.45,Y,2025-12-28 20:06:18
+P00082,SKU-00082,Polarized radical methodology,Nimbus,Apparel,165.92,Y,2025-12-28 20:06:18
+P00083,SKU-00083,Compatible 4thgeneration paradigm,Acme,Grocery,63.67,Y,2025-12-28 20:06:18
+P00084,SKU-00084,Optimized executive attitude,Acme,Electronics,57.48,Y,2025-12-28 20:06:18
+P00085,SKU-00085,De-engineered coherent productivity,Evergreen,Electronics,183.32,Y,2025-12-28 20:06:18
+P00086,SKU-00086,Mandatory didactic capability,NovaCo,Beauty,189.9,Y,2025-12-28 20:06:18
+P00087,SKU-00087,Public-key bi-directional database,Nimbus,Electronics,57.95,Y,2025-12-28 20:06:18
+P00088,SKU-00088,Ameliorated bottom-line archive,Nimbus,Electronics,140.23,Y,2025-12-28 20:06:18
+P00089,SKU-00089,Phased grid-enabled moderator,Acme,Home,83.84,Y,2025-12-28 20:06:18
+P00090,SKU-00090,Public-key uniform alliance,Nimbus,Home,128.98,Y,2025-12-28 20:06:18
+P00091,SKU-00091,Extended analyzing service-desk,BluePeak,Home,41.71,Y,2025-12-28 20:06:18
+P00092,SKU-00092,Down-sized next generation archive,NovaCo,Beauty,10.72,Y,2025-12-28 20:06:18
+P00093,SKU-00093,Front-line systemic moderator,Acme,Apparel,107.31,Y,2025-12-28 20:06:18
+P00094,SKU-00094,Stand-alone client-driven toolset,Acme,Home,32.5,Y,2025-12-28 20:06:18
+P00095,SKU-00095,Cross-platform transitional architecture,Vertex,Home,94.45,Y,2025-12-28 20:06:18
+P00096,SKU-00096,Synchronized demand-driven open architecture,NovaCo,Electronics,103.66,Y,2025-12-28 20:06:18
+P00097,SKU-00097,Assimilated discrete neural-net,Evergreen,Sports,147.45,Y,2025-12-28 20:06:18
+P00098,SKU-00098,Ameliorated dynamic interface,Acme,Electronics,100.19,Y,2025-12-28 20:06:18
+P00099,SKU-00099,Open-architected regional algorithm,Acme,Apparel,191.8,Y,2025-12-28 20:06:18
+P00100,SKU-00100,Enterprise-wide exuding toolset,NovaCo,Beauty,165.37,Y,2025-12-28 20:06:18
+P00101,SKU-00101,Expanded multi-tasking synergy,Evergreen,Electronics,63.6,Y,2025-12-28 20:06:18
+P00102,SKU-00102,Pre-emptive bandwidth-monitored forecast,Evergreen,Sports,56.96,Y,2025-12-28 20:06:18
+P00103,SKU-00103,Up-sized non-volatile access,Evergreen,Sports,168.28,Y,2025-12-28 20:06:18
+P00104,SKU-00104,Triple-buffered 4thgeneration toolset,BluePeak,Sports,70.38,Y,2025-12-28 20:06:18
+P00105,SKU-00105,Multi-tiered non-volatile methodology,Orion,Grocery,59.96,Y,2025-12-28 20:06:18
+P00106,SKU-00106,Universal 4thgeneration data-warehouse,NovaCo,Grocery,15.65,Y,2025-12-28 20:06:18
+P00107,SKU-00107,Virtual non-volatile open system,Orion,Apparel,161.67,Y,2025-12-28 20:06:18
+P00108,SKU-00108,Polarized multi-tasking functionalities,Evergreen,Electronics,189.73,Y,2025-12-28 20:06:18
+P00109,SKU-00109,Phased optimal open system,Evergreen,Apparel,74.13,Y,2025-12-28 20:06:18
+P00110,SKU-00110,Adaptive radical interface,Orion,Sports,63.53,Y,2025-12-28 20:06:18
+P00111,SKU-00111,Customer-focused zero-defect definition,BluePeak,Sports,164.5,Y,2025-12-28 20:06:18
+P00112,SKU-00112,Networked disintermediate intranet,NovaCo,Electronics,20.46,Y,2025-12-28 20:06:18
+P00113,SKU-00113,Devolved optimizing application,Orion,Sports,102.2,Y,2025-12-28 20:06:18
+P00114,SKU-00114,Proactive stable frame,BluePeak,Grocery,59.09,Y,2025-12-28 20:06:18
+P00115,SKU-00115,Persevering regional architecture,Acme,Beauty,97.17,Y,2025-12-28 20:06:18
+P00116,SKU-00116,Assimilated discrete emulation,Orion,Electronics,71.36,Y,2025-12-28 20:06:18
+P00117,SKU-00117,Intuitive radical info-mediaries,Nimbus,Home,26.99,Y,2025-12-28 20:06:18
+P00118,SKU-00118,Grass-roots didactic paradigm,BluePeak,Grocery,50.9,Y,2025-12-28 20:06:18
+P00119,SKU-00119,Function-based asynchronous system engine,Vertex,Home,121.1,Y,2025-12-28 20:06:18
+P00120,SKU-00120,Programmable executive encoding,Nimbus,Home,2.54,Y,2025-12-28 20:06:18
+P00121,SKU-00121,Ameliorated foreground open architecture,Nimbus,Electronics,73.1,Y,2025-12-28 20:06:18
+P00122,SKU-00122,Configurable clear-thinking project,Nimbus,Electronics,168.17,Y,2025-12-28 20:06:18
+P00123,SKU-00123,Proactive 24/7 challenge,Vertex,Apparel,121.78,Y,2025-12-28 20:06:18
+P00124,SKU-00124,Virtual intermediate conglomeration,BluePeak,Apparel,198.5,Y,2025-12-28 20:06:18
+P00125,SKU-00125,Re-engineered 4thgeneration solution,Nimbus,Electronics,7.96,Y,2025-12-28 20:06:18
+P00126,SKU-00126,Front-line mobile knowledge user,Evergreen,Sports,27.5,Y,2025-12-28 20:06:18
+P00127,SKU-00127,Diverse transitional matrices,NovaCo,Sports,135.63,Y,2025-12-28 20:06:18
+P00128,SKU-00128,Profit-focused global migration,Orion,Grocery,37.26,Y,2025-12-28 20:06:18
+P00129,SKU-00129,Persevering homogeneous benchmark,Orion,Grocery,160.48,Y,2025-12-28 20:06:18
+P00130,SKU-00130,Operative fresh-thinking attitude,Evergreen,Home,48.39,Y,2025-12-28 20:06:18
+P00131,SKU-00131,Assimilated leadingedge definition,NovaCo,Sports,51.42,Y,2025-12-28 20:06:18
+P00132,SKU-00132,Virtual background complexity,Orion,Grocery,117.12,Y,2025-12-28 20:06:18
+P00133,SKU-00133,Fundamental exuding complexity,Vertex,Sports,197.7,Y,2025-12-28 20:06:18
+P00134,SKU-00134,Sharable disintermediate software,Evergreen,Electronics,186.33,Y,2025-12-28 20:06:18
+P00135,SKU-00135,Configurable client-server portal,Evergreen,Sports,158.19,Y,2025-12-28 20:06:18
+P00136,SKU-00136,Function-based discrete throughput,Nimbus,Apparel,79.79,Y,2025-12-28 20:06:18
+P00137,SKU-00137,Visionary holistic success,Orion,Electronics,136.52,Y,2025-12-28 20:06:18
+P00138,SKU-00138,Cross-platform high-level knowledgebase,Nimbus,Home,189.09,Y,2025-12-28 20:06:18
+P00139,SKU-00139,Multi-layered human-resource analyzer,Orion,Sports,159.49,Y,2025-12-28 20:06:18
+P00140,SKU-00140,Extended intangible challenge,Evergreen,Sports,132.7,Y,2025-12-28 20:06:18
+P00141,SKU-00141,Distributed dedicated capability,Acme,Sports,53.48,Y,2025-12-28 20:06:18
+P00142,SKU-00142,Up-sized 4thgeneration alliance,Vertex,Grocery,187.65,Y,2025-12-28 20:06:18
+P00143,SKU-00143,Reduced scalable capability,Acme,Sports,130.4,Y,2025-12-28 20:06:18
+P00144,SKU-00144,Sharable solution-oriented array,Acme,Apparel,17.97,Y,2025-12-28 20:06:18
+P00145,SKU-00145,Extended reciprocal array,Vertex,Home,185.39,Y,2025-12-28 20:06:18
+P00146,SKU-00146,Networked grid-enabled utilization,Orion,Apparel,72.18,Y,2025-12-28 20:06:18
+P00147,SKU-00147,Face-to-face asynchronous frame,Vertex,Electronics,164.91,Y,2025-12-28 20:06:18
+P00148,SKU-00148,Down-sized bandwidth-monitored moderator,Evergreen,Electronics,185.19,Y,2025-12-28 20:06:18
+P00149,SKU-00149,Secured motivating model,Nimbus,Apparel,77.27,Y,2025-12-28 20:06:18
+P00150,SKU-00150,Enhanced empowering function,Orion,Beauty,48.61,Y,2025-12-28 20:06:18
+P00151,SKU-00151,Distributed multi-tasking help-desk,Evergreen,Grocery,191.48,Y,2025-12-28 20:06:18
+P00152,SKU-00152,Centralized didactic benchmark,Evergreen,Apparel,185.24,Y,2025-12-28 20:06:18
+P00153,SKU-00153,Self-enabling systemic process improvement,Evergreen,Electronics,195.14,Y,2025-12-28 20:06:18
+P00154,SKU-00154,Organized human-resource paradigm,Nimbus,Home,190.2,Y,2025-12-28 20:06:18
+P00155,SKU-00155,Horizontal human-resource analyzer,Nimbus,Home,29.34,Y,2025-12-28 20:06:18
+P00156,SKU-00156,Persistent discrete utilization,BluePeak,Apparel,84.67,Y,2025-12-28 20:06:18
+P00157,SKU-00157,Persistent stable moderator,Orion,Beauty,196.31,Y,2025-12-28 20:06:18
+P00158,SKU-00158,Future-proofed exuding standardization,Vertex,Grocery,138.78,Y,2025-12-28 20:06:18
+P00159,SKU-00159,Versatile intangible customer loyalty,Evergreen,Beauty,101.2,Y,2025-12-28 20:06:18
+P00160,SKU-00160,User-centric optimizing open system,NovaCo,Home,161.51,Y,2025-12-28 20:06:18
+P00161,SKU-00161,Reduced upward-trending policy,Nimbus,Electronics,122.11,Y,2025-12-28 20:06:18
+P00162,SKU-00162,Versatile content-based workforce,Acme,Beauty,4.48,Y,2025-12-28 20:06:18
+P00163,SKU-00163,Switchable encompassing data-warehouse,NovaCo,Electronics,151.81,Y,2025-12-28 20:06:18
+P00164,SKU-00164,Proactive disintermediate Internet solution,NovaCo,Grocery,128.87,Y,2025-12-28 20:06:18
+P00165,SKU-00165,Organized 5thgeneration Graphic Interface,Acme,Apparel,156.46,Y,2025-12-28 20:06:18
+P00166,SKU-00166,Team-oriented optimizing encryption,Vertex,Electronics,176.63,Y,2025-12-28 20:06:18
+P00167,SKU-00167,Quality-focused intangible algorithm,Orion,Apparel,122.52,Y,2025-12-28 20:06:18
+P00168,SKU-00168,Operative responsive encoding,Vertex,Home,53.14,Y,2025-12-28 20:06:18
+P00169,SKU-00169,Team-oriented content-based archive,Nimbus,Beauty,198.65,Y,2025-12-28 20:06:18
+P00170,SKU-00170,De-engineered 5thgeneration adapter,Evergreen,Beauty,52.47,Y,2025-12-28 20:06:18
+P00171,SKU-00171,Self-enabling transitional encryption,Vertex,Sports,166.35,Y,2025-12-28 20:06:18
+P00172,SKU-00172,User-friendly full-range flexibility,BluePeak,Grocery,188.03,Y,2025-12-28 20:06:18
+P00173,SKU-00173,Front-line transitional circuit,Vertex,Home,154.6,Y,2025-12-28 20:06:18
+P00174,SKU-00174,Programmable solution-oriented encoding,Acme,Grocery,141.33,Y,2025-12-28 20:06:18
+P00175,SKU-00175,Profit-focused asymmetric matrices,Evergreen,Beauty,112.45,Y,2025-12-28 20:06:18
+P00176,SKU-00176,Horizontal high-level complexity,BluePeak,Beauty,78.11,Y,2025-12-28 20:06:18
+P00177,SKU-00177,Ameliorated zero tolerance policy,Vertex,Home,23.28,Y,2025-12-28 20:06:18
+P00178,SKU-00178,Managed discrete leverage,BluePeak,Sports,197.59,Y,2025-12-28 20:06:18
+P00179,SKU-00179,Public-key 4thgeneration application,BluePeak,Apparel,49.44,Y,2025-12-28 20:06:18
+P00180,SKU-00180,Programmable responsive orchestration,Evergreen,Electronics,101.79,Y,2025-12-28 20:06:18
+P00181,SKU-00181,Intuitive contextually-based architecture,NovaCo,Home,80.38,Y,2025-12-28 20:06:18
+P00182,SKU-00182,Fundamental asymmetric implementation,Orion,Electronics,178.67,Y,2025-12-28 20:06:18
+P00183,SKU-00183,Inverse multi-tasking monitoring,Acme,Beauty,9.41,Y,2025-12-28 20:06:18
+P00184,SKU-00184,Realigned tertiary model,NovaCo,Home,115.27,Y,2025-12-28 20:06:18
+P00185,SKU-00185,Centralized static frame,BluePeak,Sports,143.25,Y,2025-12-28 20:06:18
+P00186,SKU-00186,Multi-lateral asynchronous installation,Vertex,Electronics,173.92,Y,2025-12-28 20:06:18
+P00187,SKU-00187,Synchronized national array,BluePeak,Beauty,116.5,Y,2025-12-28 20:06:18
+P00188,SKU-00188,Down-sized solution-oriented artificial intelligence,Acme,Sports,192.7,Y,2025-12-28 20:06:18
+P00189,SKU-00189,Cross-platform actuating collaboration,Evergreen,Sports,154.39,Y,2025-12-28 20:06:18
+P00190,SKU-00190,Multi-lateral local frame,NovaCo,Electronics,134.89,Y,2025-12-28 20:06:18
+P00191,SKU-00191,Business-focused regional contingency,Nimbus,Sports,70.88,Y,2025-12-28 20:06:18
+P00192,SKU-00192,Face-to-face scalable knowledgebase,BluePeak,Home,19.63,Y,2025-12-28 20:06:18
+P00193,SKU-00193,Integrated explicit firmware,NovaCo,Home,127.56,Y,2025-12-28 20:06:18
+P00194,SKU-00194,User-centric actuating knowledgebase,Evergreen,Beauty,96.58,Y,2025-12-28 20:06:18
+P00195,SKU-00195,Horizontal tertiary function,Acme,Electronics,164.4,Y,2025-12-28 20:06:18
+P00196,SKU-00196,Switchable leadingedge hardware,BluePeak,Grocery,53.92,Y,2025-12-28 20:06:18
+P00197,SKU-00197,Phased content-based info-mediaries,Acme,Home,35.02,Y,2025-12-28 20:06:18
+P00198,SKU-00198,Realigned optimizing customer loyalty,Acme,Apparel,85.59,Y,2025-12-28 20:06:18
+P00199,SKU-00199,Reverse-engineered bottom-line protocol,NovaCo,Apparel,134.67,Y,2025-12-28 20:06:18
+P00200,SKU-00200,User-centric bandwidth-monitored leverage,Evergreen,Apparel,123.84,Y,2025-12-28 20:06:18
+P00201,SKU-00201,Visionary 24/7 migration,Vertex,Beauty,40.8,Y,2025-12-28 20:06:18
+P00202,SKU-00202,Seamless motivating benchmark,Evergreen,Beauty,180.53,Y,2025-12-28 20:06:18
+P00203,SKU-00203,Inverse upward-trending secured line,Acme,Home,157.6,Y,2025-12-28 20:06:18
+P00204,SKU-00204,User-friendly 6thgeneration service-desk,Evergreen,Electronics,197.34,Y,2025-12-28 20:06:18
+P00205,SKU-00205,Ergonomic user-facing functionalities,Evergreen,Sports,11.32,Y,2025-12-28 20:06:18
+P00206,SKU-00206,Reverse-engineered 6thgeneration customer loyalty,Nimbus,Apparel,42.37,Y,2025-12-28 20:06:18
+P00207,SKU-00207,Public-key hybrid approach,Nimbus,Apparel,104.87,Y,2025-12-28 20:06:18
+P00208,SKU-00208,Multi-layered grid-enabled algorithm,Evergreen,Home,73.0,Y,2025-12-28 20:06:18
+P00209,SKU-00209,Decentralized coherent archive,NovaCo,Apparel,84.73,Y,2025-12-28 20:06:18
+P00210,SKU-00210,Reverse-engineered cohesive analyzer,Evergreen,Apparel,180.43,Y,2025-12-28 20:06:18
+P00211,SKU-00211,Visionary client-driven archive,BluePeak,Sports,132.74,Y,2025-12-28 20:06:18
+P00212,SKU-00212,Organic hybrid Graphic Interface,NovaCo,Beauty,89.78,Y,2025-12-28 20:06:18
+P00213,SKU-00213,Focused modular capacity,NovaCo,Apparel,107.97,Y,2025-12-28 20:06:18
+P00214,SKU-00214,Ameliorated real-time ability,Acme,Grocery,49.63,Y,2025-12-28 20:06:18
+P00215,SKU-00215,Multi-layered homogeneous frame,Vertex,Grocery,25.2,Y,2025-12-28 20:06:18
+P00216,SKU-00216,Polarized high-level circuit,Orion,Apparel,79.57,Y,2025-12-28 20:06:18
+P00217,SKU-00217,Robust mission-critical knowledge user,Acme,Beauty,2.51,Y,2025-12-28 20:06:18
+P00218,SKU-00218,Visionary fresh-thinking Internet solution,Nimbus,Grocery,20.32,Y,2025-12-28 20:06:18
+P00219,SKU-00219,Fully-configurable disintermediate workforce,NovaCo,Home,90.79,Y,2025-12-28 20:06:18
+P00220,SKU-00220,Customizable methodical system engine,NovaCo,Home,190.4,Y,2025-12-28 20:06:18
+P00221,SKU-00221,Cross-group clear-thinking initiative,BluePeak,Electronics,104.76,Y,2025-12-28 20:06:18
+P00222,SKU-00222,Cross-group next generation challenge,Acme,Apparel,84.03,Y,2025-12-28 20:06:18
+P00223,SKU-00223,Total eco-centric infrastructure,Acme,Sports,4.11,Y,2025-12-28 20:06:18
+P00224,SKU-00224,Digitized multi-state model,Orion,Grocery,75.56,Y,2025-12-28 20:06:18
+P00225,SKU-00225,Devolved hybrid migration,Nimbus,Sports,162.93,Y,2025-12-28 20:06:18
+P00226,SKU-00226,Down-sized client-driven paradigm,Orion,Beauty,160.1,Y,2025-12-28 20:06:18
+P00227,SKU-00227,Business-focused exuding protocol,Nimbus,Home,108.27,Y,2025-12-28 20:06:18
+P00228,SKU-00228,Synergistic 4thgeneration groupware,Evergreen,Grocery,52.94,Y,2025-12-28 20:06:18
+P00229,SKU-00229,Up-sized user-facing emulation,Vertex,Sports,31.56,Y,2025-12-28 20:06:18
+P00230,SKU-00230,Centralized analyzing pricing structure,Vertex,Home,35.19,Y,2025-12-28 20:06:18
+P00231,SKU-00231,Devolved 4thgeneration paradigm,Orion,Apparel,70.39,Y,2025-12-28 20:06:18
+P00232,SKU-00232,Mandatory interactive functionalities,Evergreen,Grocery,43.28,Y,2025-12-28 20:06:18
+P00233,SKU-00233,Programmable full-range alliance,Nimbus,Apparel,140.82,Y,2025-12-28 20:06:18
+P00234,SKU-00234,Multi-lateral object-oriented complexity,Evergreen,Beauty,12.51,Y,2025-12-28 20:06:18
+P00235,SKU-00235,Synergized heuristic Local Area Network,BluePeak,Sports,57.21,Y,2025-12-28 20:06:18
+P00236,SKU-00236,Progressive global solution,Vertex,Sports,163.43,Y,2025-12-28 20:06:18
+P00237,SKU-00237,Sharable leadingedge protocol,Acme,Electronics,140.13,Y,2025-12-28 20:06:18
+P00238,SKU-00238,Devolved bifurcated approach,Evergreen,Beauty,153.68,Y,2025-12-28 20:06:18
+P00239,SKU-00239,Future-proofed modular project,Nimbus,Grocery,184.87,Y,2025-12-28 20:06:18
+P00240,SKU-00240,Universal coherent toolset,NovaCo,Apparel,152.17,Y,2025-12-28 20:06:18
+P00241,SKU-00241,Open-source secondary database,Evergreen,Home,58.65,Y,2025-12-28 20:06:18
+P00242,SKU-00242,Re-contextualized systematic moderator,NovaCo,Beauty,119.33,Y,2025-12-28 20:06:18
+P00243,SKU-00243,Adaptive actuating website,Acme,Sports,192.7,Y,2025-12-28 20:06:18
+P00244,SKU-00244,Optional maximized moratorium,Acme,Apparel,59.69,Y,2025-12-28 20:06:18
+P00245,SKU-00245,Balanced even-keeled circuit,Nimbus,Home,165.45,Y,2025-12-28 20:06:18
+P00246,SKU-00246,Sharable high-level system engine,Vertex,Sports,64.59,Y,2025-12-28 20:06:18
+P00247,SKU-00247,Networked mobile frame,Vertex,Electronics,99.13,Y,2025-12-28 20:06:18
+P00248,SKU-00248,Synergistic demand-driven conglomeration,Acme,Electronics,115.97,Y,2025-12-28 20:06:18
+P00249,SKU-00249,Integrated system-worthy analyzer,NovaCo,Electronics,156.92,Y,2025-12-28 20:06:18
+P00250,SKU-00250,Expanded user-facing Local Area Network,Evergreen,Beauty,143.17,Y,2025-12-28 20:06:18
+P00251,SKU-00251,Open-architected context-sensitive strategy,Evergreen,Home,161.66,Y,2025-12-28 20:06:18
+P00252,SKU-00252,Enterprise-wide bandwidth-monitored focus group,Acme,Sports,27.17,Y,2025-12-28 20:06:18
+P00253,SKU-00253,Fully-configurable multimedia encoding,NovaCo,Home,79.98,Y,2025-12-28 20:06:18
+P00254,SKU-00254,Ameliorated secondary attitude,Vertex,Beauty,153.38,Y,2025-12-28 20:06:18
+P00255,SKU-00255,Organic clear-thinking secured line,Evergreen,Beauty,68.48,Y,2025-12-28 20:06:18
+P00256,SKU-00256,Devolved even-keeled strategy,Evergreen,Apparel,9.61,Y,2025-12-28 20:06:18
+P00257,SKU-00257,Optimized directional open system,BluePeak,Electronics,196.94,Y,2025-12-28 20:06:18
+P00258,SKU-00258,Secured grid-enabled challenge,Vertex,Apparel,128.17,Y,2025-12-28 20:06:18
+P00259,SKU-00259,Cross-platform dedicated help-desk,BluePeak,Apparel,180.93,Y,2025-12-28 20:06:18
+P00260,SKU-00260,Object-based bifurcated emulation,Orion,Home,186.47,Y,2025-12-28 20:06:18
+P00261,SKU-00261,Right-sized mission-critical hardware,NovaCo,Electronics,146.48,Y,2025-12-28 20:06:18
+P00262,SKU-00262,Public-key client-driven knowledge user,Acme,Home,69.81,Y,2025-12-28 20:06:18
+P00263,SKU-00263,Switchable human-resource moderator,Orion,Home,167.57,Y,2025-12-28 20:06:18
+P00264,SKU-00264,Multi-lateral dynamic orchestration,NovaCo,Beauty,190.35,Y,2025-12-28 20:06:18
+P00265,SKU-00265,Switchable uniform Local Area Network,Vertex,Sports,169.88,Y,2025-12-28 20:06:18
+P00266,SKU-00266,Universal asynchronous circuit,BluePeak,Beauty,168.84,Y,2025-12-28 20:06:18
+P00267,SKU-00267,Synergistic discrete interface,Vertex,Apparel,138.44,Y,2025-12-28 20:06:18
+P00268,SKU-00268,Advanced upward-trending policy,NovaCo,Grocery,80.95,Y,2025-12-28 20:06:18
+P00269,SKU-00269,Expanded explicit budgetary management,Nimbus,Apparel,49.33,Y,2025-12-28 20:06:18
+P00270,SKU-00270,Inverse systemic support,Nimbus,Apparel,65.42,Y,2025-12-28 20:06:18
+P00271,SKU-00271,Mandatory bottom-line capability,Nimbus,Home,191.81,Y,2025-12-28 20:06:18
+P00272,SKU-00272,Innovative 6thgeneration superstructure,NovaCo,Home,75.19,Y,2025-12-28 20:06:18
+P00273,SKU-00273,Programmable value-added Local Area Network,Vertex,Electronics,32.4,Y,2025-12-28 20:06:18
+P00274,SKU-00274,Front-line clear-thinking structure,Orion,Beauty,3.55,Y,2025-12-28 20:06:18
+P00275,SKU-00275,Configurable background hardware,BluePeak,Grocery,124.71,Y,2025-12-28 20:06:18
+P00276,SKU-00276,User-centric dedicated artificial intelligence,Evergreen,Grocery,71.88,Y,2025-12-28 20:06:18
+P00277,SKU-00277,Re-engineered zero-defect task-force,BluePeak,Electronics,199.12,Y,2025-12-28 20:06:18
+P00278,SKU-00278,Pre-emptive fault-tolerant circuit,Acme,Sports,75.96,Y,2025-12-28 20:06:18
+P00279,SKU-00279,Future-proofed 3rdgeneration ability,NovaCo,Electronics,161.61,Y,2025-12-28 20:06:18
+P00280,SKU-00280,Distributed uniform contingency,Acme,Beauty,69.05,Y,2025-12-28 20:06:18
+P00281,SKU-00281,Intuitive systemic parallelism,Nimbus,Beauty,145.44,Y,2025-12-28 20:06:18
+P00282,SKU-00282,Integrated impactful intranet,BluePeak,Apparel,142.91,Y,2025-12-28 20:06:18
+P00283,SKU-00283,Cross-group dynamic architecture,Nimbus,Home,39.35,Y,2025-12-28 20:06:18
+P00284,SKU-00284,Cross-platform directional groupware,NovaCo,Beauty,181.37,Y,2025-12-28 20:06:18
+P00285,SKU-00285,Stand-alone 6thgeneration circuit,Acme,Apparel,36.82,Y,2025-12-28 20:06:18
+P00286,SKU-00286,Multi-tiered motivating initiative,Orion,Beauty,15.61,Y,2025-12-28 20:06:18
+P00287,SKU-00287,De-engineered tangible approach,BluePeak,Beauty,21.97,Y,2025-12-28 20:06:18
+P00288,SKU-00288,Innovative multimedia Local Area Network,BluePeak,Grocery,154.62,Y,2025-12-28 20:06:18
+P00289,SKU-00289,Integrated logistical collaboration,Evergreen,Grocery,65.19,Y,2025-12-28 20:06:18
+P00290,SKU-00290,Re-engineered disintermediate superstructure,Acme,Grocery,115.04,Y,2025-12-28 20:06:18
+P00291,SKU-00291,Multi-channeled human-resource methodology,Nimbus,Sports,106.31,Y,2025-12-28 20:06:18
+P00292,SKU-00292,Optional systematic infrastructure,Nimbus,Beauty,136.88,Y,2025-12-28 20:06:18
+P00293,SKU-00293,Stand-alone system-worthy capability,Acme,Beauty,27.04,Y,2025-12-28 20:06:18
+P00294,SKU-00294,Self-enabling explicit productivity,BluePeak,Electronics,122.96,Y,2025-12-28 20:06:18
+P00295,SKU-00295,User-centric hybrid project,NovaCo,Electronics,15.84,Y,2025-12-28 20:06:18
+P00296,SKU-00296,Face-to-face didactic toolset,NovaCo,Grocery,89.4,Y,2025-12-28 20:06:18
+P00297,SKU-00297,Synchronized real-time protocol,Nimbus,Beauty,136.68,Y,2025-12-28 20:06:18
+P00298,SKU-00298,Front-line tangible leverage,Orion,Home,145.13,Y,2025-12-28 20:06:18
+P00299,SKU-00299,Enterprise-wide systematic task-force,Evergreen,Apparel,192.55,Y,2025-12-28 20:06:18
+P00300,SKU-00300,Extended content-based extranet,Vertex,Sports,178.61,Y,2025-12-28 20:06:18

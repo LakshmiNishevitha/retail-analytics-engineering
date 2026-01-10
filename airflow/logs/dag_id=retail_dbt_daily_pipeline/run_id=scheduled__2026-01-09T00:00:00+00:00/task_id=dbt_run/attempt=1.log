@@ -1,0 +1,88 @@
+[2026-01-10T01:24:17.309+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-10T01:24:17.319+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_run scheduled__2026-01-09T00:00:00+00:00 [queued]>
+[2026-01-10T01:24:17.323+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_run scheduled__2026-01-09T00:00:00+00:00 [queued]>
+[2026-01-10T01:24:17.324+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-01-10T01:24:17.330+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): dbt_run> on 2026-01-09 00:00:00+00:00
+[2026-01-10T01:24:17.334+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5066) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-10T01:24:17.335+0000] {standard_task_runner.py:72} INFO - Started process 5067 to run task
+[2026-01-10T01:24:17.335+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'retail_dbt_daily_pipeline', 'dbt_run', 'scheduled__2026-01-09T00:00:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/retail_dbt_daily_pipeline.py', '--cfg-path', '/tmp/tmpv6ywlnq3']
+[2026-01-10T01:24:17.336+0000] {standard_task_runner.py:105} INFO - Job 119: Subtask dbt_run
+[2026-01-10T01:24:17.364+0000] {task_command.py:467} INFO - Running <TaskInstance: retail_dbt_daily_pipeline.dbt_run scheduled__2026-01-09T00:00:00+00:00 [running]> on host a1f5ea7d51b7
+[2026-01-10T01:24:17.413+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='retail_dbt_daily_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run' AIRFLOW_CTX_EXECUTION_DATE='2026-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-09T00:00:00+00:00'
+[2026-01-10T01:24:17.413+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-10T01:24:17.423+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-10T01:24:17.423+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt/retail_dbt && /home/***/.local/bin/dbt run --target test_wh']
+[2026-01-10T01:24:17.428+0000] {subprocess.py:99} INFO - Output:
+[2026-01-10T01:24:18.984+0000] {subprocess.py:106} INFO - [0m01:24:18  Running with dbt=1.8.2
+[2026-01-10T01:24:19.635+0000] {subprocess.py:106} INFO - [0m01:24:19  Registered adapter: snowflake=1.8.2
+[2026-01-10T01:24:19.801+0000] {subprocess.py:106} INFO - [0m01:24:19  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2026-01-10T01:24:19.802+0000] {subprocess.py:106} INFO - [0m01:24:19  Unable to do partial parsing because profile has changed
+[2026-01-10T01:24:20.861+0000] {subprocess.py:106} INFO - [0m01:24:20  [[33mWARNING[0m]: Deprecated functionality
+[2026-01-10T01:24:20.862+0000] {subprocess.py:106} INFO - The `tests` config has been renamed to `data_tests`. Please see
+[2026-01-10T01:24:20.862+0000] {subprocess.py:106} INFO - https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+[2026-01-10T01:24:20.862+0000] {subprocess.py:106} INFO - information.
+[2026-01-10T01:24:21.149+0000] {subprocess.py:106} INFO - [0m01:24:21  Found 12 models, 1 snapshot, 16 data tests, 6 sources, 575 macros
+[2026-01-10T01:24:21.151+0000] {subprocess.py:106} INFO - [0m01:24:21
+[2026-01-10T01:24:23.578+0000] {subprocess.py:106} INFO - [0m01:24:23  Concurrency: 2 threads (target='test_wh')
+[2026-01-10T01:24:23.579+0000] {subprocess.py:106} INFO - [0m01:24:23
+[2026-01-10T01:24:23.595+0000] {subprocess.py:106} INFO - [0m01:24:23  1 of 12 START sql table model STAGING_ANALYTICS.dim_date ....................... [RUN]
+[2026-01-10T01:24:23.596+0000] {subprocess.py:106} INFO - [0m01:24:23  2 of 12 START sql view model STAGING_STAGING.stg_customers ..................... [RUN]
+[2026-01-10T01:24:24.811+0000] {subprocess.py:106} INFO - [0m01:24:24  2 of 12 OK created sql view model STAGING_STAGING.stg_customers ................ [[32mSUCCESS 1[0m in 1.21s]
+[2026-01-10T01:24:24.815+0000] {subprocess.py:106} INFO - [0m01:24:24  3 of 12 START sql view model STAGING_STAGING.stg_inventory_snapshots ........... [RUN]
+[2026-01-10T01:24:25.425+0000] {subprocess.py:106} INFO - [0m01:24:25  1 of 12 OK created sql table model STAGING_ANALYTICS.dim_date .................. [[32mSUCCESS 1[0m in 1.83s]
+[2026-01-10T01:24:25.428+0000] {subprocess.py:106} INFO - [0m01:24:25  4 of 12 START sql view model STAGING_STAGING.stg_order_items ................... [RUN]
+[2026-01-10T01:24:25.668+0000] {subprocess.py:106} INFO - [0m01:24:25  3 of 12 OK created sql view model STAGING_STAGING.stg_inventory_snapshots ...... [[32mSUCCESS 1[0m in 0.85s]
+[2026-01-10T01:24:25.671+0000] {subprocess.py:106} INFO - [0m01:24:25  5 of 12 START sql view model STAGING_STAGING.stg_orders ........................ [RUN]
+[2026-01-10T01:24:26.342+0000] {subprocess.py:106} INFO - [0m01:24:26  4 of 12 OK created sql view model STAGING_STAGING.stg_order_items .............. [[32mSUCCESS 1[0m in 0.91s]
+[2026-01-10T01:24:26.345+0000] {subprocess.py:106} INFO - [0m01:24:26  6 of 12 START sql view model STAGING_STAGING.stg_products ...................... [RUN]
+[2026-01-10T01:24:26.510+0000] {subprocess.py:106} INFO - [0m01:24:26  5 of 12 OK created sql view model STAGING_STAGING.stg_orders ................... [[32mSUCCESS 1[0m in 0.84s]
+[2026-01-10T01:24:26.512+0000] {subprocess.py:106} INFO - [0m01:24:26  7 of 12 START sql view model STAGING_STAGING.stg_stores ........................ [RUN]
+[2026-01-10T01:24:27.566+0000] {subprocess.py:106} INFO - [0m01:24:27  6 of 12 OK created sql view model STAGING_STAGING.stg_products ................. [[32mSUCCESS 1[0m in 1.22s]
+[2026-01-10T01:24:27.568+0000] {subprocess.py:106} INFO - [0m01:24:27  8 of 12 START sql table model STAGING_ANALYTICS.dim_customer ................... [RUN]
+[2026-01-10T01:24:27.722+0000] {subprocess.py:106} INFO - [0m01:24:27  7 of 12 OK created sql view model STAGING_STAGING.stg_stores ................... [[32mSUCCESS 1[0m in 1.21s]
+[2026-01-10T01:24:27.724+0000] {subprocess.py:106} INFO - [0m01:24:27  9 of 12 START sql table model STAGING_ANALYTICS.fact_inventory_snapshot ........ [RUN]
+[2026-01-10T01:24:29.715+0000] {subprocess.py:106} INFO - [0m01:24:29  9 of 12 OK created sql table model STAGING_ANALYTICS.fact_inventory_snapshot ... [[32mSUCCESS 1[0m in 1.99s]
+[2026-01-10T01:24:29.717+0000] {subprocess.py:106} INFO - [0m01:24:29  8 of 12 OK created sql table model STAGING_ANALYTICS.dim_customer .............. [[32mSUCCESS 1[0m in 2.14s]
+[2026-01-10T01:24:29.722+0000] {subprocess.py:106} INFO - [0m01:24:29  10 of 12 START sql table model STAGING_ANALYTICS.dim_product ................... [RUN]
+[2026-01-10T01:24:29.723+0000] {subprocess.py:106} INFO - [0m01:24:29  11 of 12 START sql table model STAGING_ANALYTICS.dim_store ..................... [RUN]
+[2026-01-10T02:24:34.314+0000] {job.py:229} INFO - Heartbeat recovered after 3606.85 seconds
+[2026-01-10T02:24:36.132+0000] {subprocess.py:106} INFO - [0m02:24:36  11 of 12 OK created sql table model STAGING_ANALYTICS.dim_store ................ [[32mSUCCESS 1[0m in 4.60s]
+[2026-01-10T02:24:36.134+0000] {subprocess.py:106} INFO - [0m02:24:36  12 of 12 START sql table model STAGING_ANALYTICS.fact_sales .................... [RUN]
+[2026-01-10T02:24:36.247+0000] {subprocess.py:106} INFO - [0m02:24:36  10 of 12 OK created sql table model STAGING_ANALYTICS.dim_product .............. [[32mSUCCESS 1[0m in 4.72s]
+[2026-01-10T02:24:39.385+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2026-01-10T02:24:39.386+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-01-10T02:24:39.387+0000] {process_utils.py:132} INFO - Sending 15 to group 5067. PIDs of all processes in the group: [5069, 5078, 5067]
+[2026-01-10T02:24:39.388+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 5067
+[2026-01-10T02:24:39.388+0000] {taskinstance.py:3093} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-01-10T02:24:39.388+0000] {subprocess.py:117} INFO - Sending SIGTERM signal to process group
+[2026-01-10T02:24:39.398+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 257, in execute
+    result = self._run_inline_command(bash_path=bash_path, env=env)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 284, in _run_inline_command
+    return self.subprocess_hook.run_command(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/hooks/subprocess.py", line 104, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2026-01-10T02:24:39.401+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=retail_dbt_daily_pipeline, task_id=dbt_run, run_id=scheduled__2026-01-09T00:00:00+00:00, execution_date=20260109T000000, start_date=20260110T012417, end_date=20260110T022439
+[2026-01-10T02:24:39.408+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-10T02:24:39.420+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=5078, status='terminated', started='01:24:19') (5078) terminated with exit code None
+[2026-01-10T02:24:39.421+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=5069, status='terminated', started='01:24:16') (5069) terminated with exit code None
+[2026-01-10T02:24:39.421+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=5067, status='terminated', exitcode=2, started='01:24:16') (5067) terminated with exit code 2

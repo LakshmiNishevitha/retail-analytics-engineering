@@ -1,0 +1,65 @@
+[2026-01-08T18:45:52.549+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-08T18:45:52.560+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_test manual__2026-01-08T18:45:13.707486+00:00 [queued]>
+[2026-01-08T18:45:52.564+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_test manual__2026-01-08T18:45:13.707486+00:00 [queued]>
+[2026-01-08T18:45:52.565+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-01-08T18:45:52.573+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): dbt_test> on 2026-01-08 18:45:13.707486+00:00
+[2026-01-08T18:45:52.576+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=344) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-08T18:45:52.577+0000] {standard_task_runner.py:72} INFO - Started process 345 to run task
+[2026-01-08T18:45:52.577+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'retail_dbt_daily_pipeline', 'dbt_test', 'manual__2026-01-08T18:45:13.707486+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/retail_dw_daily.py', '--cfg-path', '/tmp/tmp1xopct2l']
+[2026-01-08T18:45:52.578+0000] {standard_task_runner.py:105} INFO - Job 24: Subtask dbt_test
+[2026-01-08T18:45:52.609+0000] {task_command.py:467} INFO - Running <TaskInstance: retail_dbt_daily_pipeline.dbt_test manual__2026-01-08T18:45:13.707486+00:00 [running]> on host 5fc490f84247
+[2026-01-08T18:45:52.662+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='retail_dbt_daily_pipeline' AIRFLOW_CTX_TASK_ID='dbt_test' AIRFLOW_CTX_EXECUTION_DATE='2026-01-08T18:45:13.707486+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-08T18:45:13.707486+00:00'
+[2026-01-08T18:45:52.663+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-08T18:45:52.676+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-08T18:45:52.677+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt/retail_dbt && dbt test']
+[2026-01-08T18:45:52.683+0000] {subprocess.py:99} INFO - Output:
+[2026-01-08T18:45:54.309+0000] {subprocess.py:106} INFO - [0m18:45:54  Running with dbt=1.8.2
+[2026-01-08T18:45:54.994+0000] {subprocess.py:106} INFO - [0m18:45:54  Registered adapter: snowflake=1.8.2
+[2026-01-08T18:45:55.413+0000] {subprocess.py:106} INFO - [0m18:45:55  Found 12 models, 1 snapshot, 16 data tests, 6 sources, 575 macros
+[2026-01-08T18:45:55.416+0000] {subprocess.py:106} INFO - [0m18:45:55
+[2026-01-08T18:45:56.460+0000] {subprocess.py:106} INFO - [0m18:45:56  Concurrency: 4 threads (target='dev')
+[2026-01-08T18:45:56.460+0000] {subprocess.py:106} INFO - [0m18:45:56
+[2026-01-08T18:45:56.470+0000] {subprocess.py:106} INFO - [0m18:45:56  1 of 16 START test not_null_fact_inventory_snapshot_date_key ................... [RUN]
+[2026-01-08T18:45:56.470+0000] {subprocess.py:106} INFO - [0m18:45:56  2 of 16 START test not_null_fact_inventory_snapshot_product_key ................ [RUN]
+[2026-01-08T18:45:56.471+0000] {subprocess.py:106} INFO - [0m18:45:56  3 of 16 START test not_null_fact_inventory_snapshot_store_key .................. [RUN]
+[2026-01-08T18:45:56.472+0000] {subprocess.py:106} INFO - [0m18:45:56  4 of 16 START test not_null_fact_sales_customer_key ............................ [RUN]
+[2026-01-08T18:45:57.747+0000] {subprocess.py:106} INFO - [0m18:45:57  2 of 16 PASS not_null_fact_inventory_snapshot_product_key ...................... [[32mPASS[0m in 1.27s]
+[2026-01-08T18:45:57.749+0000] {subprocess.py:106} INFO - [0m18:45:57  5 of 16 START test not_null_fact_sales_date_key ................................ [RUN]
+[2026-01-08T18:45:57.755+0000] {subprocess.py:106} INFO - [0m18:45:57  4 of 16 PASS not_null_fact_sales_customer_key .................................. [[32mPASS[0m in 1.28s]
+[2026-01-08T18:45:57.760+0000] {subprocess.py:106} INFO - [0m18:45:57  6 of 16 START test not_null_fact_sales_product_key ............................. [RUN]
+[2026-01-08T18:45:57.805+0000] {subprocess.py:106} INFO - [0m18:45:57  1 of 16 PASS not_null_fact_inventory_snapshot_date_key ......................... [[32mPASS[0m in 1.33s]
+[2026-01-08T18:45:57.806+0000] {subprocess.py:106} INFO - [0m18:45:57  7 of 16 START test not_null_fact_sales_sales_line_key .......................... [RUN]
+[2026-01-08T18:45:57.811+0000] {subprocess.py:106} INFO - [0m18:45:57  3 of 16 PASS not_null_fact_inventory_snapshot_store_key ........................ [[32mPASS[0m in 1.34s]
+[2026-01-08T18:45:57.813+0000] {subprocess.py:106} INFO - [0m18:45:57  8 of 16 START test not_null_fact_sales_store_key ............................... [RUN]
+[2026-01-08T18:45:58.744+0000] {subprocess.py:106} INFO - [0m18:45:58  5 of 16 PASS not_null_fact_sales_date_key ...................................... [[32mPASS[0m in 0.99s]
+[2026-01-08T18:45:58.745+0000] {subprocess.py:106} INFO - [0m18:45:58  9 of 16 START test relationships_fact_inventory_snapshot_date_key__date_key__ref_dim_date_  [RUN]
+[2026-01-08T18:45:58.802+0000] {subprocess.py:106} INFO - [0m18:45:58  8 of 16 PASS not_null_fact_sales_store_key ..................................... [[32mPASS[0m in 0.99s]
+[2026-01-08T18:45:58.803+0000] {subprocess.py:106} INFO - [0m18:45:58  6 of 16 PASS not_null_fact_sales_product_key ................................... [[32mPASS[0m in 1.04s]
+[2026-01-08T18:45:58.806+0000] {subprocess.py:106} INFO - [0m18:45:58  10 of 16 START test relationships_fact_inventory_snapshot_product_key__product_key__ref_dim_product_  [RUN]
+[2026-01-08T18:45:58.807+0000] {subprocess.py:106} INFO - [0m18:45:58  11 of 16 START test relationships_fact_inventory_snapshot_store_key__store_key__ref_dim_store_  [RUN]
+[2026-01-08T18:45:58.904+0000] {subprocess.py:106} INFO - [0m18:45:58  7 of 16 PASS not_null_fact_sales_sales_line_key ................................ [[32mPASS[0m in 1.10s]
+[2026-01-08T18:45:58.905+0000] {subprocess.py:106} INFO - [0m18:45:58  12 of 16 START test relationships_fact_sales_customer_key__customer_key__ref_dim_customer_  [RUN]
+[2026-01-08T18:46:00.088+0000] {subprocess.py:106} INFO - [0m18:46:00  12 of 16 PASS relationships_fact_sales_customer_key__customer_key__ref_dim_customer_  [[32mPASS[0m in 1.18s]
+[2026-01-08T18:46:00.091+0000] {subprocess.py:106} INFO - [0m18:46:00  13 of 16 START test relationships_fact_sales_date_key__date_key__ref_dim_date_ . [RUN]
+[2026-01-08T18:46:00.189+0000] {subprocess.py:106} INFO - [0m18:46:00  10 of 16 PASS relationships_fact_inventory_snapshot_product_key__product_key__ref_dim_product_  [[32mPASS[0m in 1.38s]
+[2026-01-08T18:46:00.194+0000] {subprocess.py:106} INFO - [0m18:46:00  9 of 16 PASS relationships_fact_inventory_snapshot_date_key__date_key__ref_dim_date_  [[32mPASS[0m in 1.45s]
+[2026-01-08T18:46:00.195+0000] {subprocess.py:106} INFO - [0m18:46:00  11 of 16 PASS relationships_fact_inventory_snapshot_store_key__store_key__ref_dim_store_  [[32mPASS[0m in 1.39s]
+[2026-01-08T18:46:00.197+0000] {subprocess.py:106} INFO - [0m18:46:00  14 of 16 START test relationships_fact_sales_product_key__product_key__ref_dim_product_  [RUN]
+[2026-01-08T18:46:00.200+0000] {subprocess.py:106} INFO - [0m18:46:00  15 of 16 START test relationships_fact_sales_store_key__store_key__ref_dim_store_  [RUN]
+[2026-01-08T18:46:00.201+0000] {subprocess.py:106} INFO - [0m18:46:00  16 of 16 START test unique_fact_sales_sales_line_key ........................... [RUN]
+[2026-01-08T18:46:01.122+0000] {subprocess.py:106} INFO - [0m18:46:01  13 of 16 PASS relationships_fact_sales_date_key__date_key__ref_dim_date_ ....... [[32mPASS[0m in 1.03s]
+[2026-01-08T18:46:01.497+0000] {subprocess.py:106} INFO - [0m18:46:01  16 of 16 PASS unique_fact_sales_sales_line_key ................................. [[32mPASS[0m in 1.29s]
+[2026-01-08T18:46:01.619+0000] {subprocess.py:106} INFO - [0m18:46:01  14 of 16 PASS relationships_fact_sales_product_key__product_key__ref_dim_product_  [[32mPASS[0m in 1.42s]
+[2026-01-08T18:46:01.755+0000] {subprocess.py:106} INFO - [0m18:46:01  15 of 16 PASS relationships_fact_sales_store_key__store_key__ref_dim_store_ .... [[32mPASS[0m in 1.55s]
+[2026-01-08T18:46:01.762+0000] {subprocess.py:106} INFO - [0m18:46:01
+[2026-01-08T18:46:01.763+0000] {subprocess.py:106} INFO - [0m18:46:01  Finished running 16 data tests in 0 hours 0 minutes and 6.35 seconds (6.35s).
+[2026-01-08T18:46:01.808+0000] {subprocess.py:106} INFO - [0m18:46:01
+[2026-01-08T18:46:01.808+0000] {subprocess.py:106} INFO - [0m18:46:01  [32mCompleted successfully[0m
+[2026-01-08T18:46:01.809+0000] {subprocess.py:106} INFO - [0m18:46:01
+[2026-01-08T18:46:01.809+0000] {subprocess.py:106} INFO - [0m18:46:01  Done. PASS=16 WARN=0 ERROR=0 SKIP=0 TOTAL=16
+[2026-01-08T18:46:02.434+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-01-08T18:46:02.451+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-08T18:46:02.451+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=retail_dbt_daily_pipeline, task_id=dbt_test, run_id=manual__2026-01-08T18:45:13.707486+00:00, execution_date=20260108T184513, start_date=20260108T184552, end_date=20260108T184602
+[2026-01-08T18:46:02.484+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-01-08T18:46:02.496+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-08T18:46:02.497+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

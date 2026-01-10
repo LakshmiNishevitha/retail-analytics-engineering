@@ -1,0 +1,35 @@
+[2026-01-09T02:18:11.254+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-09T02:18:11.267+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_snapshot manual__2026-01-09T02:18:06.595567+00:00 [queued]>
+[2026-01-09T02:18:11.272+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_dbt_daily_pipeline.dbt_snapshot manual__2026-01-09T02:18:06.595567+00:00 [queued]>
+[2026-01-09T02:18:11.272+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-01-09T02:18:11.279+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): dbt_snapshot> on 2026-01-09 02:18:06.595567+00:00
+[2026-01-09T02:18:11.284+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=225) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-09T02:18:11.284+0000] {standard_task_runner.py:72} INFO - Started process 226 to run task
+[2026-01-09T02:18:11.284+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'retail_dbt_daily_pipeline', 'dbt_snapshot', 'manual__2026-01-09T02:18:06.595567+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/retail_dbt_daily_pipeline.py', '--cfg-path', '/tmp/tmpdl4f388t']
+[2026-01-09T02:18:11.286+0000] {standard_task_runner.py:105} INFO - Job 64: Subtask dbt_snapshot
+[2026-01-09T02:18:11.313+0000] {task_command.py:467} INFO - Running <TaskInstance: retail_dbt_daily_pipeline.dbt_snapshot manual__2026-01-09T02:18:06.595567+00:00 [running]> on host 5fc490f84247
+[2026-01-09T02:18:11.362+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='analytics' AIRFLOW_CTX_DAG_ID='retail_dbt_daily_pipeline' AIRFLOW_CTX_TASK_ID='dbt_snapshot' AIRFLOW_CTX_EXECUTION_DATE='2026-01-09T02:18:06.595567+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-09T02:18:06.595567+00:00'
+[2026-01-09T02:18:11.362+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-09T02:18:11.372+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-09T02:18:11.372+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dbt/retail_dbt && /home/***/.local/bin/dbt snapshot']
+[2026-01-09T02:18:11.377+0000] {subprocess.py:99} INFO - Output:
+[2026-01-09T02:18:12.942+0000] {subprocess.py:106} INFO - [0m02:18:12  Running with dbt=1.8.2
+[2026-01-09T02:18:13.611+0000] {subprocess.py:106} INFO - [0m02:18:13  Registered adapter: snowflake=1.8.2
+[2026-01-09T02:18:13.964+0000] {subprocess.py:106} INFO - [0m02:18:13  Found 12 models, 1 snapshot, 16 data tests, 6 sources, 575 macros
+[2026-01-09T02:18:13.966+0000] {subprocess.py:106} INFO - [0m02:18:13
+[2026-01-09T02:18:15.507+0000] {subprocess.py:106} INFO - [0m02:18:15  Concurrency: 4 threads (target='dev')
+[2026-01-09T02:18:15.508+0000] {subprocess.py:106} INFO - [0m02:18:15
+[2026-01-09T02:18:15.520+0000] {subprocess.py:106} INFO - [0m02:18:15  1 of 1 START snapshot ANALYTICS.snap_customers ................................. [RUN]
+[2026-01-09T02:18:19.485+0000] {subprocess.py:106} INFO - [0m02:18:19  1 of 1 OK snapshotted ANALYTICS.snap_customers ................................. [[32mSUCCESS 0[0m in 3.96s]
+[2026-01-09T02:18:19.488+0000] {subprocess.py:106} INFO - [0m02:18:19
+[2026-01-09T02:18:19.489+0000] {subprocess.py:106} INFO - [0m02:18:19  Finished running 1 snapshot in 0 hours 0 minutes and 5.52 seconds (5.52s).
+[2026-01-09T02:18:19.524+0000] {subprocess.py:106} INFO - [0m02:18:19
+[2026-01-09T02:18:19.524+0000] {subprocess.py:106} INFO - [0m02:18:19  [32mCompleted successfully[0m
+[2026-01-09T02:18:19.525+0000] {subprocess.py:106} INFO - [0m02:18:19
+[2026-01-09T02:18:19.525+0000] {subprocess.py:106} INFO - [0m02:18:19  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2026-01-09T02:18:20.118+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-01-09T02:18:20.135+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-09T02:18:20.138+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=retail_dbt_daily_pipeline, task_id=dbt_snapshot, run_id=manual__2026-01-09T02:18:06.595567+00:00, execution_date=20260109T021806, start_date=20260109T021811, end_date=20260109T021820
+[2026-01-09T02:18:20.152+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-01-09T02:18:20.169+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-09T02:18:20.171+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
