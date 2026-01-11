@@ -1,4 +1,4 @@
-name: dbt CI (compile-only)
+name: dbt CI (parse-only, safe)
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  dbt-compile:
+  dbt-parse:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,30 +23,29 @@ jobs:
           python -m pip install --upgrade pip
           pip install "dbt-snowflake==1.8.2"
 
-      - name: Create CI-only dbt profile (NO Snowflake access)
+      - name: Create dummy dbt profile (no real credentials)
         run: |
           mkdir -p ~/.dbt
-          cat > ~/.dbt/profiles.yml << 'YAML'
+          cat > ~/.dbt/profiles.yml << 'EOF'
           retail_dbt:
             target: ci
             outputs:
               ci:
                 type: snowflake
-                account: "FAKE_ACCOUNT"
-                user: "FAKE_USER"
-                password: "FAKE_PASSWORD"
-                role: "FAKE_ROLE"
-                database: "CI_DUMMY_DB"
-                warehouse: "CI_DUMMY_WH"
-                schema: "CI_DUMMY_SCHEMA"
-                threads: 1
-          YAML
+                account: DUMMY_ACCOUNT
+                user: DUMMY_USER
+                password: DUMMY_PASS
+                role: DUMMY_ROLE
+                database: DUMMY_DB
+                warehouse: DUMMY_WH
+                schema: DUMMY_SCHEMA
+                threads: 2
+          EOF
 
-       - name: dbt deps
-         run: |
-           dbt deps --project-dir dbt/retail_dbt --profiles-dir ~/.dbt
+      - name: dbt deps
+        working-directory: dbt/retail_dbt
+        run: dbt deps --profiles-dir ~/.dbt --target ci
 
-      - name: dbt parse (SAFE: no warehouse connection)
-        run: |
-          dbt parse --project-dir dbt/retail_dbt --profiles-dir ~/.dbt
-
+      - name: dbt parse (no DB connection)
+        working-directory: dbt/retail_dbt
+        run: dbt parse --profiles-dir ~/.dbt --target ci --no-partial-parse
