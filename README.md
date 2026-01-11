@@ -4,7 +4,7 @@ An end-to-end Analytics Engineering project demonstrating how raw retail data is
 
 ---
 
-## 🏗 Architecture Overview
+## Architecture Overview
 
 **Tech Stack**
 - **dbt** – SQL transformations, tests, documentation
@@ -25,7 +25,7 @@ CI validates dbt models on every commit
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```text
 .
