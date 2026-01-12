@@ -41,6 +41,7 @@ This project exists to demonstrate best practices that solve those problems:
 - Production-style project structure suitable for team collaboration
 
 In short, this project shows how analytics engineering should be done, not just how to write SQL.
+
 ---
 
 ## Architecture Overview
