@@ -41,6 +41,51 @@ This project exists to demonstrate best practices that solve those problems:
 - Production-style project structure suitable for team collaboration
 
 In short, this project shows how analytics engineering should be done, not just how to write SQL.
+---
+
+## Architecture Overview
+
+**Tech Stack**
+- **dbt** – SQL transformations, tests, documentation
+- **Apache Airflow** – Orchestration of dbt workflows
+- **Snowflake** – Cloud data warehouse
+- **GitHub Actions** – CI (safe, parse-only)
+- **Docker** – Local development environment
+
+**High-level flow:**
+
+Raw Data → dbt Staging → dbt Marts → dbt Tests  
+⬇  
+Airflow DAG orchestrates dbt runs  
+⬇  
+dbt Docs generated and served  
+⬇  
+CI validates dbt models on every commit
+
+---
+
+## Project Structure
+
+```text
+.
+├── dags/                     # Airflow DAGs
+│   └── retail_dbt_daily_pipeline.py
+├── dbt/
+│   └── retail_dbt/
+│       ├── models/
+│       │   ├── staging/
+│       │   ├── marts/
+│       ├── snapshots/
+│       ├── tests/
+│       └── dbt_project.yml
+├── .github/
+│   └── workflows/
+│       └── dbt-ci.yml         # CI (parse-only)
+├── docker-compose.yml
+└── README.md
+
+```
+---
 
 ## How to use this project?
 ### Prerequisites
@@ -219,89 +264,20 @@ Using dbt Docs, you can:
 
 ---
 
-## Architecture Overview
-
-**Tech Stack**
-- **dbt** – SQL transformations, tests, documentation
-- **Apache Airflow** – Orchestration of dbt workflows
-- **Snowflake** – Cloud data warehouse
-- **GitHub Actions** – CI (safe, parse-only)
-- **Docker** – Local development environment
-
-**High-level flow:**
-
-Raw Data → dbt Staging → dbt Marts → dbt Tests  
-⬇  
-Airflow DAG orchestrates dbt runs  
-⬇  
-dbt Docs generated and served  
-⬇  
-CI validates dbt models on every commit
-
----
-
-## Project Structure
-
-```text
-.
-├── dags/                     # Airflow DAGs
-│   └── retail_dbt_daily_pipeline.py
-├── dbt/
-│   └── retail_dbt/
-│       ├── models/
-│       │   ├── staging/
-│       │   ├── marts/
-│       ├── snapshots/
-│       ├── tests/
-│       └── dbt_project.yml
-├── .github/
-│   └── workflows/
-│       └── dbt-ci.yml         # CI (parse-only)
-├── docker-compose.yml
-└── README.md
-
-```
----
-
-## Continuous Integration (CI)
-
-This project uses GitHub Actions for CI.
-
-What CI does
-
-Runs dbt deps
-
-Runs dbt parse
-
-Validates SQL, model references, and schema files
-
-Why parse-only CI?
-
-No Snowflake credentials required
-
-No warehouse costs
-
-No risk of leaking secrets
-
-Fast feedback on pull requests
-
-CI ensures that broken dbt changes are caught before they reach production.
-
----
 
 ## Key Takeaways
 
 This project demonstrates:
 
-Analytics engineering best practices
+- Analytics engineering best practices
 
-dbt model layering and testing
+- dbt model layering and testing
 
-Orchestration with Apache Airflow
+- Orchestration with Apache Airflow
 
-Safe CI design for data projects
+- Safe CI design for data projects
 
-Production-ready repository structure
+- Production-ready repository structure
 
 It is designed as a portfolio project that reflects real-world analytics engineering workflows.
 
