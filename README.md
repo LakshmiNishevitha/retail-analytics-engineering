@@ -43,7 +43,7 @@ This project exists to demonstrate best practices that solve those problems:
 In short, this project shows how analytics engineering should be done, not just how to write SQL.
 
 ## How to use this project?
-### 1. Prerequisites
+### Prerequisites
 
 You need:
 
@@ -53,57 +53,169 @@ You need:
 
 - A Snowflake account (for full dbt runs)
 
-### 2. Run the platform locally
 
-From the project root:
+### Step 1 — Clone the repo
 
+```bash
+git clone https://github.com/LakshmiNishevitha/retail-analytics-engineering.git
+cd retail-analytics-engineering
+```
+
+---
+
+### Step 2 — Confirm Docker is installed
+
+```bash
+docker --version
+docker compose version
+```
+
+---
+
+### Step 3 — Set up Snowflake credentials (required for dbt build)
+
+Your dbt profile should exist at:
+
+```bash
+cat ~/.dbt/profiles.yml
+```
+
+You should have a profile like `retail_dbt:` in that file.
+
+Then set your Snowflake password as an environment variable:
+
+### macOS / Linux
+
+```bash
+export SNOWFLAKE_PASSWORD="YOUR_PASSWORD"
+```
+
+### Windows (PowerShell)
+
+```powershell
+setx SNOWFLAKE_PASSWORD "YOUR_PASSWORD"
+```
+
+Validate dbt connection locally:
+
+```bash
+cd dbt/retail_dbt
+dbt debug
+cd ../../
+```
+
+---
+
+### Step 4 — Start the platform (Airflow + Postgres + MailHog + dbt Docs)
+
+From repo root:
+
+```bash
 docker compose up -d --build
+```
 
+Check running containers:
 
-This will start:
+```bash
+docker ps
+```
 
-Airflow Webserver
+---
 
-Airflow Scheduler
+### Step 5 — Open the UIs
 
-PostgreSQL (Airflow metadata DB)
+* **Airflow UI:** [http://localhost:8080](http://localhost:8080)
+* **dbt Docs:** [http://localhost:8081](http://localhost:8081)
+* **MailHog (email inbox):** [http://localhost:8025](http://localhost:8025)
 
-dbt Docs service
+---
 
-### 3. Access the interfaces
+### Step 6 — Trigger the Airflow DAG (runs dbt pipeline)
 
-Airflow UI: http://localhost:8080
+Trigger the pipeline:
 
-dbt Docs: http://localhost:8081
-
-### 4. Trigger the analytics pipeline
-
-You can trigger the dbt workflow via Airflow:
-
+```bash
 docker exec -it airflow-webserver airflow dags trigger retail_dbt_daily_pipeline
+```
 
+List DAG runs (to see status):
 
-The DAG performs:
+```bash
+docker exec -it airflow-webserver airflow dags list-runs -d retail_dbt_daily_pipeline -o table
+```
 
+List tasks in this DAG:
+
+```bash
+docker exec -it airflow-webserver airflow tasks list retail_dbt_daily_pipeline
+```
+
+---
+
+### Step 7 — What the DAG does (in order)
+
+Airflow orchestrates dbt commands in this order:
+
+1. `dbt deps`
+2. `dbt build`
+3. `dbt docs generate`
+
+---
+
+### Step 8 — Run dbt manually (optional, without Airflow)
+
+If someone wants to run dbt without Airflow:
+
+```bash
+cd dbt/retail_dbt
 dbt deps
-
 dbt build
-
 dbt docs generate
+dbt docs serve --port 8081 --no-browser
+```
 
-### 5. Explore the analytics models
+---
+
+### Step 9 — Stop everything
+
+```bash
+docker compose down
+```
+
+---
+
+### Step 10 — Rebuild cleanly (if something breaks)
+
+```bash
+docker compose down
+docker compose up -d --build
+```
+
+---
+
+### Step 11 — Check logs (debug)
+
+```bash
+docker logs --tail 80 airflow-webserver
+docker logs --tail 80 airflow-scheduler
+docker logs --tail 80 dbt-docs
+```
+
+---
+
+### Explore the analytics models
 
 Using dbt Docs, you can:
 
-View model lineage
+- View model lineage
 
-Understand table-level documentation
+- Understand table-level documentation
 
-Inspect tests and dependencies
+- Inspect tests and dependencies
 
-Explore staging and mart layers
+- Explore staging and mart layers
 
-This makes the data warehouse self-documenting.
+- This makes the data warehouse self-documenting.
 
 ---
 
@@ -147,6 +259,8 @@ CI validates dbt models on every commit
 │       └── dbt-ci.yml         # CI (parse-only)
 ├── docker-compose.yml
 └── README.md
+
+```
 ---
 
 ## Continuous Integration (CI)
@@ -190,4 +304,5 @@ Safe CI design for data projects
 Production-ready repository structure
 
 It is designed as a portfolio project that reflects real-world analytics engineering workflows.
+
 ---
